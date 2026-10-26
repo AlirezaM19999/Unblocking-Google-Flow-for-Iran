@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; base-uri 'none'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none';">
+    <title>جریان AI | دسترسی به Flow</title>
+    <link rel="stylesheet" href="panel.css">
+</head>
+
+<body>
+    <main>
+        <!-- هدر باریک -->
+        <header class="topbar">
+            <div class="brand">
+                <span class="brand-dot" aria-hidden="true"></span>
+                <div class="brand-text">
+                    <span class="brand-word">جریان AI</span>
+                    <span class="brand-sub">FLOW</span>
+                </div>
+            </div>
+            <span class="live-badge">LIVE</span>
+        </header>
+
+        <!-- بخش اصلی: دکمهٔ دایره‌ای قدرت -->
+        <section class="deck">
+            <div class="deck-ring" aria-hidden="true"></div>
+            <div class="deck-ring deck-ring--2" aria-hidden="true"></div>
+
+            <button id="toggle" class="switch" role="switch" aria-checked="false" aria-label="فعال‌سازی دسترسی"
+                disabled>
+                <span class="switch-thumb">
+                    <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 3v9" />
+                        <path d="M18.4 6.6a9 9 0 1 1-12.8 0" />
+                    </svg>
+                </span>
+            </button>
+
+            <div id="status" class="status" role="status">
+                <span class="status-dot status-dot--idle"></span>
+                <span class="status-text">در حال بررسی…</span>
+            </div>
+
+            <p class="deck-hint">پس از فعال‌سازی، تب Flow را دوباره بارگذاری کنید.</p>
+        </section>
+
+        <!-- دکمه‌های اقدام -->
+        <div class="actions">
+            <button id="open" class="action action--primary">
+                <span>باز کردن Google Flow</span>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 5l-7 7 7 7" />
+                </svg>
+            </button>
+            <button id="reload" class="action action--ghost" hidden>
+                <span>بارگذاری دوبارهٔ تب Flow</span>
+            </button>
+        </div>
+
+        <p id="error" class="error" role="alert"></p>
+
+        <!-- فوتر مینیمال -->
+        <footer class="foot">
+            <a href="https://alireza-portfolio.businessman.workers.dev/fa" target="_blank"
+                rel="noopener noreferrer">سایت</a>
+            <span class="foot-sep" aria-hidden="true"></span>
+            <a href="https://alireza-portfolio.businessman.workers.dev/fa/#about" target="_blank"
+                rel="noopener noreferrer">درباره ما</a>
+        </footer>
+    </main>
+    <script src="panel.js"></script>
+</body>
+
+</html>
