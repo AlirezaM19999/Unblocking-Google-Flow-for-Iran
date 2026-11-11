@@ -15,7 +15,7 @@
     "service_worker": "app.js"
   },
   "action": {
-    "default_title": "Jaryan AI Flow",
+    "default_title": "Arch Flow",
     "default_popup": "panel.html",
     "default_icon": {
       "16": "assets/icon-16.png",
